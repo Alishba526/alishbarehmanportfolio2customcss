@@ -1,15 +1,4 @@
-/* /* /* .container {
-    background: linear-gradient(red,rgb(208, 0, 255),orange,rgb(128, 100, 0));
-    animation:bg 5s linear infinite;
-    text-align: center;
-    height: 100%;
-    width: 100%; 
-}
 
-@keyframes bg {
-    100%{
-        filter: hue-rotate(360deg);
-    }*/
 
 body{
     margin: 0;

@@ -66,7 +66,7 @@
 @keyframes figma { 0% { width: 0; } 100% { width: 80%; } }
 @keyframes tailwind { 0% { width: 0; } 100% { width: 94%; } }
 
-/* Skill right 
+/* Skill right
 .professional {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -135,7 +135,21 @@
 
 
 
-/* Base styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
 .main-text {
     width: 100%;
     text-align: center;
@@ -143,18 +157,20 @@
     color: var(--hover-color);
 }
 
+/* Skills Section */
 .skills {
     background: var(--secon-bg-color);
+    padding: 1rem; /* Add some padding for mobile */
 }
 
 .skill-main {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 30px;
-    grid-column-gap: 50px;
+    grid-template-columns: 1fr; /* Single column on mobile */
+    gap: 30px; /* Use gap for uniform spacing */
 }
 
+/* Skill Bar */
 .skill-bar {
     margin-bottom: 2.3rem;
 }
@@ -190,6 +206,7 @@
     box-shadow: var(--neon-box-shadow);
 }
 
+/* Skill Bars Width */
 .skill-bar .bar .html { width: 90%; animation: html 2s; }
 .skill-bar .bar .css { width: 81%; animation: css 3s; }
 .skill-bar .bar .javascript { width: 84%; animation: javascript 4s; }
@@ -197,6 +214,7 @@
 .skill-bar .bar .figma { width: 80%; animation: figma 6s; }
 .skill-bar .bar .tailwind { width: 94%; animation: tailwind 7s; }
 
+/* Keyframes for Animation */
 @keyframes html { 0% { width: 0; } 100% { width: 90%; } }
 @keyframes css { 0% { width: 0; } 100% { width: 81%; } }
 @keyframes javascript { 0% { width: 0; } 100% { width: 84%; } }
@@ -204,10 +222,11 @@
 @keyframes figma { 0% { width: 0; } 100% { width: 80%; } }
 @keyframes tailwind { 0% { width: 0; } 100% { width: 94%; } }
 
-/* Skill right */
+/* Professional Section */
 .professional {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    gap: 20px; /* Use gap for uniform spacing */
 }
 
 .box {
@@ -237,6 +256,7 @@
     font-weight: 600;
 }
 
+/* Circle */
 .circle {
     width: 100%;
     height: 120px;
@@ -244,6 +264,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: relative; /* Ensure position for child elements */
 }
 
 .circle .points {
@@ -260,6 +281,7 @@
     animation-delay: calc(var(--i) * 0.05s);
 }
 
+/* Glow Animation */
 @keyframes glow {
     0% {
         background-color: var(--bg-color);
@@ -272,41 +294,27 @@
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
     .skill-main {
-        grid-template-columns: repeat(2, 1fr); /* Keeps two columns on tablets */
-        grid-column-gap: 20px; /* Slightly reduces the column gap */
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
     }
 
-    .skill-main h3 {
-        font-size: calc(var(--normal-font) * 0.95); /* Slightly smaller font size */
-    }
-
-    .box {
-        margin: 5px 0; /* Reduce box margin on larger mobile */
+    .professional {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
     }
 
     .circle {
-        height: 100px; /* Adjust circle height */
+        /* Adjust circle size for larger screens if needed */
+        height: 150px; /* Example of increasing size */
     }
 }
 
-@media (max-width: 768px) {
-    .skill-main {
-        grid-template-columns: 1fr; /* Stacks skill bars vertically */
-        grid-row-gap: 20px; /* Reduces row gap */
-        grid-column-gap: 0; /* Removes column gap */
-    }
-
-    .skill-main h3 {
-        font-size: calc(var(--normal-font) * 0.85); /* Further reduce font size */
-    }
-
-    .box {
-        margin: 10px 0; /* Maintain margin for boxes */
+@media (max-width: 767px) {
+    .professional {
+        grid-template-columns: 1fr; /* Single column on small screens */
     }
 
     .circle {
-        height: 80px; /* Adjust height of circles for mobile */
+        height: 120px; /* Maintain circle size on smaller screens */
     }
 }
