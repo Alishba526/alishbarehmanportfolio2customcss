@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)chrome://new-tab-page-third-party/ -->
+<html dir="ltr" lang="en" class="" style="background-color: rgb(60, 60, 60); background-image: unset; --ntp-theme-text-color: rgba(232, 234, 237, 1.00);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>New Tab</title>
+    <style>
+      html {
+        --ntp-focus-shadow-color: rgba(var(--google-blue-600-rgb), .4);
+        --ntp-theme-text-color: var(--google-grey-800);
+        background-attachment: fixed;
+        background-color: rgba(255,255,255,1);
+        background-position: -64px;
+        background-repeat: no-repeat;
+        height: 100%;
+        overflow: auto;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html {
+          --ntp-focus-shadow-color: rgba(var(--google-blue-300-rgb), .5);
+          --ntp-theme-text-color: white;
+        }
+      }
+
+      html[has-custom-background] {
+        background-image: image-set(
+            url(chrome://theme/IDR_THEME_NTP_BACKGROUND?) 1x,
+            url(chrome://theme/IDR_THEME_NTP_BACKGROUND@2x?) 2x);
+      }
+
+      body {
+        align-items: center;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+      }
+
+      cr-most-visited {
+        --most-visited-focus-shadow: 0 0 0 2px var(--ntp-focus-shadow-color);
+        --most-visited-text-color: var(--ntp-theme-text-color);
+        --most-visited-text-shadow: none;
+      }
+
+      html[has-custom-background] cr-most-visited {
+        --most-visited-text-shadow: 0 0 16px rgba(0, 0, 0, .3);
+      }
+    </style>
+  </head>
+  <body>
+    <script type="module" src="chrome://new-tab-page-third-party/strings.m.js"></script>
+    <cr-most-visited visible_="" use-white-tile-icon_="" is-dark_=""><template shadowrootmode="open"><!----><!--_html_template_start_-->
+<div id="container" style="--tile-background-color: rgba(68, 71, 70, 1.00); --column-count: 1; --row-count: 1;">
+  <!--?lit$320797784$-->
+  <cr-button id="addShortcut" tabindex="0" noink="" hidden="" aria-label="" title="" role="button" aria-disabled="false"><template shadowrootmode="open"><!---->
+<div id="background"></div>
+<slot id="prefixIcon" name="prefix-icon">
+</slot>
+<span id="content"><slot></slot></span>
+<slot id="suffixIcon" name="suffix-icon">
+</slot>
+<div id="hoverBackground" part="hoverBackground"></div></template>
+    <div id="addShortcutIconContainer" class="tile-icon">
+      <div id="addShortcutIcon" draggable="false"></div>
+    </div>
+    <div class="tile-title">
+      <span><!--?lit$320797784$--></span>
+    </div>
+  </cr-button>
+  <cr-dialog id="dialog"><template shadowrootmode="open"><!---->
+<dialog id="dialog" part="dialog" aria-labelledby="title">
+<!-- This wrapper is necessary, such that the "pulse" animation is not
+    erroneously played when the user clicks on the outer-most scrollbar. -->
+  <div id="content-wrapper" part="wrapper">
+    <div class="top-container">
+      <h2 id="title" class="title-container" tabindex="-1">
+        <slot name="title"></slot>
+      </h2>
+      <!--?lit$320797784$-->
+    </div>
+    <slot name="header"></slot>
+    <div id="cr-container-shadow-top" class="cr-container-shadow"></div><div class="body-container" id="container" show-bottom-shadow="" part="body-container"><div></div><div></div>
+      <slot name="body"></slot>
+    <div></div><div></div></div><div id="cr-container-shadow-bottom" class="cr-container-shadow"></div>
+    <slot name="button-container"></slot>
+    <slot name="footer"></slot>
+  </div>
+</dialog></template>
+    <div slot="title"><!--?lit$320797784$--></div>
+    <div slot="body" id="dialogContent">
+      <cr-input id="dialogInputName" spellcheck="false" autofocus="" label=""><template shadowrootmode="open"><!---->
+<div id="label" class="cr-form-field-label" aria-hidden="true" hidden="">
+  <!--?lit$320797784$-->
+</div>
+<div id="row-container" part="row-container">
+  <div id="input-container">
+    <div id="inner-input-container">
+      <div id="hover-layer"></div>
+      <div id="inner-input-content">
+        <slot name="inline-prefix"></slot>
+        <input id="input" part="input" autocomplete="off" autofocus="" tabindex="0" type="text" maxlength="" minlength="" inputmode="" aria-label="" aria-invalid="false">
+        <slot name="inline-suffix"></slot>
+      </div>
+    </div>
+    <div id="underline-base"></div>
+    <div id="underline"></div>
+  </div>
+  <slot name="suffix"></slot>
+</div>
+<div id="error" aria-live="assertive"><!--?lit$320797784$--></div></template></cr-input>
+      <cr-input id="dialogInputUrl" spellcheck="false" type="url" label=""><template shadowrootmode="open"><!---->
+<div id="label" class="cr-form-field-label" aria-hidden="true" hidden="">
+  <!--?lit$320797784$-->
+</div>
+<div id="row-container" part="row-container">
+  <div id="input-container">
+    <div id="inner-input-container">
+      <div id="hover-layer"></div>
+      <div id="inner-input-content">
+        <slot name="inline-prefix"></slot>
+        <input id="input" part="input" autocomplete="off" tabindex="0" type="url" maxlength="" minlength="" inputmode="" aria-label="" aria-invalid="false">
+        <slot name="inline-suffix"></slot>
+      </div>
+    </div>
+    <div id="underline-base"></div>
+    <div id="underline"></div>
+  </div>
+  <slot name="suffix"></slot>
+</div>
+<div id="error" aria-live="assertive"><!--?lit$320797784$--></div></template>
+      </cr-input>
+    </div>
+    <div slot="button-container">
+      <cr-button class="cancel-button" role="button" tabindex="0" aria-disabled="false"><template shadowrootmode="open"><!---->
+<div id="background"></div>
+<slot id="prefixIcon" name="prefix-icon">
+</slot>
+<span id="content"><slot></slot></span>
+<slot id="suffixIcon" name="suffix-icon">
+</slot>
+<div id="hoverBackground" part="hoverBackground"></div></template>
+        <!--?lit$320797784$-->
+      </cr-button>
+      <cr-button class="action-button" disabled="" role="button" tabindex="-1" aria-disabled="true"><template shadowrootmode="open"><!---->
+<div id="background"></div>
+<slot id="prefixIcon" name="prefix-icon">
+</slot>
+<span id="content"><slot></slot></span>
+<slot id="suffixIcon" name="suffix-icon">
+</slot>
+<div id="hoverBackground" part="hoverBackground"></div></template>
+        <!--?lit$320797784$-->
+      </cr-button>
+    </div>
+  </cr-dialog>
+  <cr-action-menu id="actionMenu"><template shadowrootmode="open"><!---->
+<dialog id="dialog" part="dialog" role="application">
+  <div id="wrapper" class="item-wrapper" role="menu" tabindex="-1">
+    <slot id="contentNode"></slot>
+  </div>
+</dialog></template>
+    <button id="actionMenuEdit" class="dropdown-item" role="menuitem">
+      <!--?lit$320797784$-->
+    </button>
+    <button id="actionMenuRemove" class="dropdown-item" role="menuitem">
+      <!--?lit$320797784$-->Remove
+    </button>
+  </cr-action-menu>
+</div>
+<cr-toast id="toast" duration="10000"><template shadowrootmode="open"><!----><slot></slot></template>
+  <div><!--?lit$320797784$--></div>
+  <!--?lit$320797784$-->
+</cr-toast>
+<!--_html_template_end_--></template></cr-most-visited>
+    <script type="module" src="chrome://new-tab-page-third-party/new_tab_page_third_party.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+  
+
+</body></html>

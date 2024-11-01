@@ -1,0 +1,159 @@
+/* 
+
+
+.filter-buttons {
+    margin: 2rem;
+    text-align: center;
+}
+  
+.filter-buttons .btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+}
+  
+.filter-buttons .btn:hover {
+    color: var(--hover-color);
+}
+  
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+}
+  
+.port-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    transition: transform 0.3s ease;
+    height: 300px; 
+}
+  
+.port-box:hover {
+    transform: scale(1.05);
+}
+  
+.port-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%; 
+    width: 100%;
+}
+  
+.port-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease;
+}
+  
+.port-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem; 
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+  
+.port-box:hover .port-content {
+    opacity: 1;
+    background: linear-gradient(aqua, pink, magenta, orange);
+    display: flex;
+} 
+ */
+
+
+.filter-buttons {
+    margin: 2rem;
+    text-align: center;
+}
+
+.filter-buttons .btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-left: 1.3rem;
+    color: var(--text-color);
+}
+
+.filter-buttons .btn:hover {
+    color: var(--hover-color);
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 2rem;
+}
+
+.port-box {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+    box-shadow: var(--neon-box-shadow);
+    transition: transform 0.3s ease;
+    height: 100%; 
+    max-height: 400px; 
+}
+
+.port-box:hover {
+    transform: scale(1.05);
+}
+
+.port-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70%; 
+    width: 100%;
+}
+
+.port-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: opacity 0.5s ease;
+}
+
+.port-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem; 
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.port-box:hover .port-content {
+    opacity: 1;
+    background: linear-gradient(aqua, pink, magenta, orange);
+    display: flex;
+}

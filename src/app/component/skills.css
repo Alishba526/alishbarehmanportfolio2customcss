@@ -1,0 +1,312 @@
+/* .main-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--hover-color);
+}
+
+.skills {
+    background: var(--secon-bg-color);
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html { width: 90%; animation: html 2s; }
+.skill-bar .bar .css { width: 81%; animation: css 3s; }
+.skill-bar .bar .javascript { width: 84%; animation: javascript 4s; }
+.skill-bar .bar .typescript { width: 88%; animation: typescript 5s; }
+.skill-bar .bar .figma { width: 80%; animation: figma 6s; }
+.skill-bar .bar .tailwind { width: 94%; animation: tailwind 7s; }
+
+@keyframes html { 0% { width: 0; } 100% { width: 90%; } }
+@keyframes css { 0% { width: 0; } 100% { width: 81%; } }
+@keyframes javascript { 0% { width: 0; } 100% { width: 84%; } }
+@keyframes typescript { 0% { width: 0; } 100% { width: 88%; } }
+@keyframes figma { 0% { width: 0; } 100% { width: 80%; } }
+@keyframes tailwind { 0% { width: 0; } 100% { width: 94%; } }
+
+/* Skill right 
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text {
+    align-items: center;
+    color: #fff;
+    font: 1rem;
+    text-align: center;
+}
+
+.box .text big {
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small {
+    display: block;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle .points {
+    width: 2px;
+    height: 10px;
+    background: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+@keyframes glow {
+    0% {
+        background-color: var(--bg-color);
+        box-shadow: none;
+    }
+    100% {
+        background: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
+    }
+} */
+
+
+
+/* Base styles */
+.main-text {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--hover-color);
+}
+
+.skills {
+    background: var(--secon-bg-color);
+}
+
+.skill-main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 50px;
+}
+
+.skill-bar {
+    margin-bottom: 2.3rem;
+}
+
+.skill-main h3 {
+    margin-bottom: 2rem;
+    font-size: var(--normal-font);
+    text-align: center;
+}
+
+.skill-left .skill-bar .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.skill-left .skill-bar .bar {
+    width: 100%;
+    height: 10px;
+    background: var(--bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.skill-bar .bar span {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--hover-color);
+    border-radius: 25px;
+    box-shadow: var(--neon-box-shadow);
+}
+
+.skill-bar .bar .html { width: 90%; animation: html 2s; }
+.skill-bar .bar .css { width: 81%; animation: css 3s; }
+.skill-bar .bar .javascript { width: 84%; animation: javascript 4s; }
+.skill-bar .bar .typescript { width: 88%; animation: typescript 5s; }
+.skill-bar .bar .figma { width: 80%; animation: figma 6s; }
+.skill-bar .bar .tailwind { width: 94%; animation: tailwind 7s; }
+
+@keyframes html { 0% { width: 0; } 100% { width: 90%; } }
+@keyframes css { 0% { width: 0; } 100% { width: 81%; } }
+@keyframes javascript { 0% { width: 0; } 100% { width: 84%; } }
+@keyframes typescript { 0% { width: 0; } 100% { width: 88%; } }
+@keyframes figma { 0% { width: 0; } 100% { width: 80%; } }
+@keyframes tailwind { 0% { width: 0; } 100% { width: 94%; } }
+
+/* Skill right */
+.professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.box {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+}
+
+.box .text {
+    align-items: center;
+    color: #fff;
+    font: 1rem;
+    text-align: center;
+}
+
+.box .text big {
+    font: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .text small {
+    display: block;
+    font-weight: 600;
+}
+
+.circle {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.circle .points {
+    width: 2px;
+    height: 10px;
+    background: var(--bg-color);
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+}
+
+.points.marked {
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+@keyframes glow {
+    0% {
+        background-color: var(--bg-color);
+        box-shadow: none;
+    }
+    100% {
+        background: var(--hover-color);
+        box-shadow: var(--neon-box-shadow);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .skill-main {
+        grid-template-columns: repeat(2, 1fr); /* Keeps two columns on tablets */
+        grid-column-gap: 20px; /* Slightly reduces the column gap */
+    }
+
+    .skill-main h3 {
+        font-size: calc(var(--normal-font) * 0.95); /* Slightly smaller font size */
+    }
+
+    .box {
+        margin: 5px 0; /* Reduce box margin on larger mobile */
+    }
+
+    .circle {
+        height: 100px; /* Adjust circle height */
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-main {
+        grid-template-columns: 1fr; /* Stacks skill bars vertically */
+        grid-row-gap: 20px; /* Reduces row gap */
+        grid-column-gap: 0; /* Removes column gap */
+    }
+
+    .skill-main h3 {
+        font-size: calc(var(--normal-font) * 0.85); /* Further reduce font size */
+    }
+
+    .box {
+        margin: 10px 0; /* Maintain margin for boxes */
+    }
+
+    .circle {
+        height: 80px; /* Adjust height of circles for mobile */
+    }
+}
