@@ -10,10 +10,10 @@ const Hero = () => {
   useEffect(() => {
     const words: NodeListOf<HTMLElement> = document.querySelectorAll(".word");
     words.forEach((word) => {
-      let letters: string[] = word.textContent?.split("") || [];
+      const letters: string[] = word.textContent?.split("") || [];
       word.textContent = "";
       letters.forEach((letter) => {
-        let span: HTMLElement = document.createElement("span");
+        const span: HTMLElement = document.createElement("span");
         span.textContent = letter;
         span.className = "letter";
         word.append(span);
@@ -21,12 +21,12 @@ const Hero = () => {
     });
 
     let currentWordIndex: number = 0;
-    let maxWordIndex: number = words.length - 1;
+    const maxWordIndex: number = words.length - 1;
     words[currentWordIndex].style.opacity = "1";
 
     const changerText = (): void => {
-      let currentWord: HTMLElement = words[currentWordIndex];
-      let nextWord: HTMLElement =
+      const currentWord: HTMLElement = words[currentWordIndex];
+      const  nextWord: HTMLElement =
         currentWordIndex === maxWordIndex
           ? words[0]
           : words[currentWordIndex + 1];
@@ -51,7 +51,7 @@ const Hero = () => {
 
     changerText();
     const interval = setInterval(changerText, 3000); // 3 seconds interval
-    return () => clearInterval(interval); // Cleanup interval on unmount
+    return () => clearInterval(interval); 
   }, []);
 
   return (
@@ -60,7 +60,7 @@ const Hero = () => {
         <div className="home-content">
           <h1>Hi! I am Alishba</h1>
           <div className="change-text">
-            <h3>and i'm</h3>
+            <h3>and i&apos;m</h3>
             <h3>
               <span className="word">Frontend&nbsp;developer</span>
               <span className="word">website&nbsp; creater</span>{" "}

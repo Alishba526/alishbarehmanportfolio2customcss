@@ -71,7 +71,7 @@ function Portfolio() {
                 src={agency}
                 alt="Agency Project"
                 width={500}
-                height={400}
+                height={600}
               />
             </div>
             <div className="port-content">
@@ -91,9 +91,9 @@ function Portfolio() {
             <div className="port-img">
               <Image
                 src={alishbaport}
-                alt="Alishba's Portfolio Project"
+                alt="Alishba&apos;s Portfolio Project"
                 width={500}
-                height={400}
+                height={700}
               />
             </div>
             <div className="port-content">
@@ -115,7 +115,7 @@ function Portfolio() {
                 src={burger}
                 alt="Burger Web Project"
                 width={500}
-                height={400}
+                height={600}
               />
             </div>
             <div className="port-content">

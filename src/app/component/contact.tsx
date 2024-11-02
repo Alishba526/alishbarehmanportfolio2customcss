@@ -1,6 +1,6 @@
-// pages/contact.js
+
 import React from 'react';
-import './contact.css' // Assuming you create this file in the styles folder
+import './contact.css'
 
 export default function Contact() {
   return (

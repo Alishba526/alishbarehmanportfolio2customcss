@@ -1,4 +1,4 @@
-/* 
+
 
 
 .filter-buttons {
@@ -77,9 +77,9 @@
     background: linear-gradient(aqua, pink, magenta, orange);
     display: flex;
 } 
- */
 
 
+/* 
 .filter-buttons {
     margin: 2rem;
     text-align: center;
@@ -155,5 +155,5 @@
 .port-box:hover .port-content {
     opacity: 1;
     background: linear-gradient(aqua, pink, magenta, orange);
-    display: flex;
-}
+    display: flex; */
+/* } */

@@ -8,8 +8,8 @@ function About() {
         <Image
           src={about}
           alt="Description of image"
-          width={300} // Desired width
-          height={400} // Desired height
+          width={300} 
+          height={400} 
         />
         <div className="info-about1">
           <span>10+</span>
