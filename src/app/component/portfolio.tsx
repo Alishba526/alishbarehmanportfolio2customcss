@@ -16,15 +16,6 @@ function Portfolio() {
         <span>What I will do for you</span>
         <h3>My Latest Projects</h3>
       </div>
-
-      <div className="container">
-        <div className="filter-buttons">
-          <button className="btn">All</button>
-          <button className="btn">Product</button>
-          <button className="btn">Interacting</button>
-          <button className="btn">Web app</button>
-        </div>
-
         <div className="portfolio-gallery">
           <div className="port-box">
             <div className="port-img">
@@ -42,7 +33,7 @@ function Portfolio() {
                 Adipisci eos quod accusamus quam ipsam dignissimos rem rerum
                 blanditiis perferendis.
               </p>
-              <Link href="react-website-pharmeas4.netlify.app">
+              <Link href="https://react-website-pharmeas4.netlify.app/">
                 <FaExternalLinkAlt />
               </Link>
             </div>
@@ -115,7 +106,7 @@ function Portfolio() {
                 src={burger}
                 alt="Burger Web Project"
                 width={500}
-                height={600}
+                height={400}
               />
             </div>
             <div className="port-content">
@@ -153,9 +144,10 @@ function Portfolio() {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }
 
 export default Portfolio;
+
+

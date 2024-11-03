@@ -236,7 +236,7 @@ a.btn:nth-child(2)::before {
     }
 
     .btn-box {
-        width: 70%; /* Full width for buttons */
+        width: 90%; /* Full width for buttons */
         /* flex-direction: column; Stack buttons vertically */
         align-items: center;
         gap: 5%;

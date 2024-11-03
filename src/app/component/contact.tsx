@@ -1,10 +1,11 @@
 
-import React from 'react';
-import './contact.css'
 
-export default function Contact() {
+import React from 'react';
+import './contact.css';
+
+ function Contact() {
   return (
-    <div className="contact-container">
+    <div  id='contact' className="contact-container">
       <h2>Contact Me</h2>
       <p>Feel free to reach out for any projects or collaborations. I’d love to hear from you!</p>
       <form className="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
@@ -22,3 +23,6 @@ export default function Contact() {
     </div>
   );
 }
+
+
+export default Contact

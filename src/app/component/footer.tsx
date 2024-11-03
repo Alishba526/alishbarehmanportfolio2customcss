@@ -1,6 +1,5 @@
-import './footer.css';
 import { FaArrowUp } from 'react-icons/fa'; 
-
+import './footer.css'
 function Footer() {
     return (
         <footer>

@@ -1,6 +1,6 @@
-footer {
-    background: linear-gradient(to right, aqua, black);
-    color: white;
+footer{
+    background:var(aqua) ;
+    color: aqua;
     height: 50px;
     display: flex;
     align-items: center;
@@ -24,5 +24,5 @@ footer p {
 }
 
 .back-to-top:hover {
-    color: white;
+  color:white ;
 }
