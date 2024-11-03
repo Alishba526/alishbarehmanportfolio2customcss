@@ -69,8 +69,8 @@ const Hero = () => {
             </h3>
           </div>
           <p>
-            Web developer hoon, modern technologies use kar ke responsive aur
-            user-friendly websites banata hoon.
+            I am a web developer, creating responsive and user-friendly websites
+            using modern technologies.
           </p>
           <div className="info-box">
             <div className="emai-info">
@@ -83,7 +83,10 @@ const Hero = () => {
             </div>
           </div>
           <div className="btn-box">
-            <a href="https://alishbarehmanportfolio-pegw.vercel.app/" className="btn">
+            <a
+              href="https://alishbarehmanportfolio-pegw.vercel.app/"
+              className="btn"
+            >
               Download CV
             </a>
             <a

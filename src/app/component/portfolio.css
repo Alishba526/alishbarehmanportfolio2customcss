@@ -51,3 +51,7 @@
     background: linear-gradient(aqua, pink, magenta, orange);
     display: flex;
 }
+
+.main-text{
+    margin-bottom: 5%;
+}

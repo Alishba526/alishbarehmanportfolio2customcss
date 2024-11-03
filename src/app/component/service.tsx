@@ -1,28 +1,29 @@
-
-
-import './service.css'; // Importing as a global CSS file
+import "./service.css"; // Importing as a global CSS file
 
 function Service() {
   const services = [
     {
       icon: "📐",
-      title: "Graphic Designer",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam optio nisi perferendis animi dolores nostrum ut doloribus et harum!",
+      title: "Figma Designer",
+      description:
+        "I am a Figma designer focused on creating visually appealing and user-friendly interfaces, collaborating to bring ideas to life through detailed designs and prototypes.",
     },
     {
       icon: "💻",
       title: "Web Developer",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam optio nisi perferendis animi dolores nostrum ut doloribus et harum!",
+      description:
+        "Passionate about building responsive and user-friendly web applications",
     },
     {
       icon: "🖥️",
       title: "UI/UX Designer",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ullam optio nisi perferendis animi dolores nostrum ut doloribus et harum!",
+      description:
+        "I specialize in UI/UX design, creating intuitive and engaging interfaces that enhance user experiences and ensure seamless interaction with digital products",
     },
   ];
 
   return (
-    <section id="service" className="servicesSection"> {/* Set the ID here */}
+    <section id="service" className="servicesSection">
       <h2 className="subheading">What I Will Do for You</h2>
       <h3 className="heading">Our Services</h3>
       <div className="servicesGrid">

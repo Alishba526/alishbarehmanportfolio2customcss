@@ -94,7 +94,26 @@ const Skills: React.FC = () => {
               <span className="tailwind"></span>
             </div>
           </div>
+          <div className="skill-bar">
+            <div className="info">
+              <p>Next.js</p>
+              <p>89%</p>
+            </div>
+            <div className="bar">
+              <span className="tailwind"></span>
+            </div>
+          </div>
+          <div className="skill-bar">
+            <div className="info">
+              <p>React.js</p>
+              <p>98%</p>
+            </div>
+            <div className="bar">
+              <span className="tailwind"></span>
+            </div>
+          </div>
         </div>
+        
         <div className="skill-right">
           <h3>Professional Skills</h3>
           <div className="professional">
