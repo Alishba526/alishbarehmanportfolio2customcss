@@ -53,7 +53,7 @@
     color: #fdfdfd;
     font-weight: 300;
     margin-bottom: 1.5rem;
-    line-height: 1.6; /* Improve line height for readability */
+    line-height: 1.6; 
 }
 
 .info-about1,
@@ -165,6 +165,8 @@
     }
 
     .about-content p {
-        font-size: 0.9rem; /* Further adjust paragraph size */
+        font-size: 0.3rem; 
     }
 }
+
+

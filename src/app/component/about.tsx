@@ -1,5 +1,5 @@
 import Image from "next/image";
-import about from "../../public/image hi to h.png";
+import about from "../../public/aboutme.png";
 import "./about.css";
 function About() {
   return (
@@ -8,7 +8,7 @@ function About() {
         <Image
           src={about}
           alt="Description of image"
-          width={300}
+          width={400}
           height={400}
         />
         <div className="info-about1">
@@ -37,7 +37,7 @@ function About() {
           presence.
         </p>
         <div className="btn-box">
-          <a href="#" className="btn">
+          <a href="https://www.linkedin.com/in/alishba-rehman-29074821a/" className="btn">
             Read More!
           </a>
         </div>

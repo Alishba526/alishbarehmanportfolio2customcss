@@ -4,7 +4,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { IoLogoYoutube } from "react-icons/io5";
 import Image from "next/image";
-import example from "../../public/examples.png";
+import example from "../../public/heropic.png";
 import "./hero.css";
 const Hero = () => {
   useEffect(() => {
