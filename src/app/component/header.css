@@ -131,6 +131,6 @@ span {
 
     .navlist a {
         padding: 8px 15%; /* Adjust padding for smaller screens */
-        font-size: var(--norma-font); /* Smaller font size */
+         /* Smaller font size */
     }
 }

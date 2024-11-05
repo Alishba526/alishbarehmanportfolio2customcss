@@ -139,9 +139,10 @@
     .info-about1,
     .info-about2,
     .info-about3 {
-        width: 60px; /* Adjust width for smaller screens */
+        width: 25%; /* Adjust width for smaller screens */
         height: 60px; /* Adjust height for smaller screens */
         font-size: 0.4rem; /* Smaller font size for info boxes */
+        height: 25%;
     }
 }
 

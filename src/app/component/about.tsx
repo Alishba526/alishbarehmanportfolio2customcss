@@ -13,7 +13,7 @@ function About() {
         />
         <div className="info-about1">
           <span>3+</span>
-          <p>years of exprience</p>
+          <p>years exprience</p>
         </div>
         <div className="info-about2">
           <span>50+</span>
@@ -28,14 +28,14 @@ function About() {
         <span>Let me Indrojuce myself</span>
         <h2>About me</h2>
         <h3>A Story Of Good</h3>
-        <p>
+        <h4>
           I am a web developer with 3 years of experience in creating modern
           responsive, and user-focused websites. Skilled in leveraging the
           latest technologies to deliver seamless and efficient web experiences
           I am dedicated to building high-quality functional, and visually
           appealing applications that meet user needs and enhance online
           presence.
-        </p>
+        </h4>
         <div className="btn-box">
           <a href="https://www.linkedin.com/in/alishba-rehman-29074821a/" className="btn">
             Read More!
