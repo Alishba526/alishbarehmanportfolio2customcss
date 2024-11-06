@@ -1,15 +1,12 @@
 
 
-
-
-
  .about {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem; /* Adjusted from &apos;grid: gap&apos; to &apos;gap&apos; */
     background: var(--secon-bg-color);
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    flex-wrap: wrap; 
     padding: 2rem; /* Add padding for better spacing */
 }
 
@@ -50,9 +47,9 @@
 }
 
 .about-content p {
-    color: #fdfdfd;
-    font-weight: 300;
-    margin-bottom: 1.5rem;
+    color:#fdfdfd;
+    font-weight: 200;
+    margin-bottom: 1.2rem;
     line-height: 1.6; 
 }
 
@@ -129,19 +126,19 @@
     }
 
     .about-content h3 {
-        font-size: 1.2rem; /* Adjust subheading size */
+        font-size: 1.2rem;
     }
 
     .about-content p {
-        font-size: 1rem; /* Adjust paragraph size */
+        font-size: 1rem;
     }
 
     .info-about1,
     .info-about2,
     .info-about3 {
-        width: 25%; /* Adjust width for smaller screens */
-        height: 60px; /* Adjust height for smaller screens */
-        font-size: 0.4rem; /* Smaller font size for info boxes */
+        width: 25%; 
+        height: 60px;
+        font-size: 0.4rem;
         height: 25%;
     }
 }
@@ -161,13 +158,8 @@
         font-size: 1.2rem; /* Further adjust heading size */
     }
 
-    .about-content h3 {
-        font-size: 1rem; /* Further adjust subheading size */
-    }
 
-    .about-content p {
-        font-size: 0.3rem; 
-    }
+    
 }
 
 

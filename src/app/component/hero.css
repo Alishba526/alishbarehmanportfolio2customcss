@@ -117,7 +117,7 @@ a.btn::before {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(orange, red, aqua, magenta);
+    background: linear-gradient( aqua, rgb(86, 86, 226));
     width: 0;
     height: 100%;
     z-index: -1;
@@ -134,7 +134,7 @@ a.btn:nth-child(2) {
 }
 
 a.btn:nth-child(2)::before {
-    background: linear-gradient(purple, orange, rgb(86, 86, 226));
+    background: linear-gradient( aqua, rgb(86, 86, 226));
 }
 
 .social-icons {
